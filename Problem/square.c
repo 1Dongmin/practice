@@ -8,7 +8,7 @@ int main ()
 	printf("\n%llu %llu \n", min, max);
 	for(; min < max; min++)
 	{
-		for(; (min - squre * squre) >= 0; squre++)
+		for(; (squre * squre) <= min; squre++)
 		{
 			if ((squre * squre) != min){count++;}
 		}
