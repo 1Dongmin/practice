@@ -2,15 +2,15 @@
 #define ll long long
 int main ()
 {
-	unsigned ll min, max, count = 0, squre = 1;
-	scanf("%d", &min);
-	scanf("%d", &max);
-	printf("\n %d %d \n", min, max);
-	for(min; min < max; min++)
+	unsigned ll min, max, count = 0, squre = 0;
+	scanf("%llu", &min);
+	scanf("%llu", &max);
+	printf("\n%llu %llu \n", min, max);
+	for(int a = min; a < max; a++)
 	{
-		for(squre; (squre*squre) < max; squre++)
+		for(squre = 0; (a - squre*squre) >= 0; squre++)
 		{
-			if ((min - (squre * squre)) == 0){count++;}
+			if ((a * a) != min){count++;}
 		}
 	}
 	printf("\n%d", count);
