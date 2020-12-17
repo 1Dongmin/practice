@@ -6,11 +6,11 @@ int main ()
 	scanf("%llu", &min);
 	scanf("%llu", &max);
 	printf("\n%llu %llu \n", min, max);
-	for(int a = min; a < max; a++)
+	for(; min < max; min++)
 	{
-		for(squre = 0; (a - squre*squre) >= 0; squre++)
+		for(; (min - squre * squre) >= 0; squre++)
 		{
-			if ((a * a) != min){count++;}
+			if ((squre * squre) != min){count++;}
 		}
 	}
 	printf("\n%d", count);
