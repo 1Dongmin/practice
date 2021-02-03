@@ -1,19 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-int mian(){
-    int size, max = 0, min = 100;
-    scanf("%d", &size);
-    double* score =(double*)malloc(sizeof(double) * size);
-    for(int i = 0; i < size; i++){
-        scanf("%d", score[i]);
+int main() {
+    double temp, sum = .0, max = 0, size = 0;
+    scanf("%lf", &size);
+    double* score = (double*)malloc(sizeof(double) * size);
+    for (int i = 0; i < size; i++) {
+        scanf("%lf", temp);
+        score[i] = temp;
+        if (temp > max) { max = temp; }
     }
-    for(int i = 0; i < size; i++){
-        if(score[i] > max)max = score[i];
-        if(score[i] < min)min = score[i];
+    for (int i = 0; i < size; i++) {
+        score[i] = (double)score[i] / max * 100;
+        sum += score[i];
     }
-    for(int i = 0; i < size; i++){
-        score[i] = (double*)score[i] / max * 100;
-        int sum;
-    }
-    
+    printf("%lf", sum / size);
+    free(score);
+    return 0;
 }
