@@ -9,11 +9,11 @@ int main(){
             scanf("%d", &score[k]);
             sum += score[k];
         }
-        avr = ((sum * 1.0) / (times * 1.0));
+        avr = ((sum * 1.0) / (times * 1.0)) * 1.0;
         for(int t = 0; t < times; t++){
             if(avr < score[t]) winner++;
         }
-        printf("%lf%%\n", (winner * 1.0) / (times * 1.0) * 100.0);
+        printf("%.3lf%%\n", (winner * 1.0) / (times * 1.0) * 100.0);
         sum = 0, winner = 0, avr = 0;
     }
     for(int i = 0; i < times; i++){
