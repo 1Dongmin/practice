@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int rep, times, score[100], sum = 0, winner = 0;
+    int rep, times, score[1001], sum = 0, winner = 0;
     double avr;
     scanf("%d", &rep);
     for(int i = 0; i < rep; i++){
