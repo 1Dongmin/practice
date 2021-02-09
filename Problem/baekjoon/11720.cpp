@@ -2,17 +2,20 @@
 #include <stdlib.h>
 int main(void)
 {
-	char input_char[1];
-	//int N;
-	long long sum = 0 ,N;
-	scanf("%lld", &N);
-	getchar();
-	for (int i = 0; i < N; i++) {
-		input_char[0] = getchar();
-		sum += atoll(input_char);
-        if (i == N) NULL;
+	char inpchar[101], temp[101];
+	long long sum = 0 ,size;
+	scanf("%lld", &size);
+	/*for (int i = 0; i < size; i++){
+		scanf("%s", &inpchar[i]);
+
+	}*/
+	inpchar[0] = getchar();
+	for (long long k = 0; k < size; k++) {
+		inpchar[k] = getchar();
+		sum += atoll(&inpchar[k]);
+        if (k == size) NULL;
+		//printf("\n###%c###\n", inpchar[k]);
 	}
-	//sum++;
 	printf("%lld", sum);
 	return 0;
 }
