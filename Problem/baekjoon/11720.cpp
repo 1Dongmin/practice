@@ -6,19 +6,18 @@ int main(void)
 	long long sum = 0 ,size;
 	scanf("%lld", &size);
 	//for (int i = 0; i < size; i++)scanf("%s", &inpchar[i]);
-	
 	inpchar[0] = getchar();
 	for (long long k = 0; k < size; k++) {
+		printf("\nListen...");
 		inpchar[k] = getchar();
 		sum += atoll(&inpchar[k]);
 
-        if (k == size - 1) {
+        /*if (k == size) {
 			inpchar[k] = '\0';
 			printf("\n###  NULL!!!  ###\n");
-		}
-
-		//printf("\n###%c###\n", inpchar[k]);
+		}*/
+		printf("\n### times: %u ###\n### data: %c ###\n", k, inpchar[k]);
 	}
-	printf("%lld", sum);
+	printf("%u", sum);
 	return 0;
 }
