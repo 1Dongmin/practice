@@ -11,7 +11,12 @@ int main(void)
 	for (long long k = 0; k < size; k++) {
 		inpchar[k] = getchar();
 		sum += atoll(&inpchar[k]);
-        if (k == size) inpchar[k] = NULL;
+
+        if (k == size - 1) {
+			inpchar[k] = '\0';
+			printf("\n###  NULL!!!  ###\n");
+		}
+
 		//printf("\n###%c###\n", inpchar[k]);
 	}
 	printf("%lld", sum);
