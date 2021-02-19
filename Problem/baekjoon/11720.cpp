@@ -18,6 +18,6 @@ int main(void)
 		}*/
 		printf("\n### times: %u ###\n### data: %c ###\n", k, inpchar[k]);
 	}
-	printf("%u", sum);
+	printf("%lld", sum);
 	return 0;
 }
