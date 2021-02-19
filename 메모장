@@ -1,6 +1,7 @@
-관공서 인터넷 파이썬 PIP 문제 해결법
-[
+관공서 인터넷 파이썬 PIP 문제 해결법 {
 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+}
 
-eth e8dfB1546E69346dE0E899761dB025c9092c443f
-]
+이더리움 지갑 주소 {
+내 지갑: e8dfB1546E69346dE0E899761dB025c9092c443f
+}
